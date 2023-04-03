@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4260908a-81b6-4798-a4a4-bf0b04953b49" name="Changes" comment="while wait() do&#10;local url = &quot;&quot; -------------Your Webhook&#10;local data = {&#10;   [&quot;content&quot;] = &quot;@everyone &quot;,&#10;   [&quot;embeds&quot;] = {&#10;       {&#10;           [&quot;title&quot;] = game:GetService(&quot;MarketplaceService&quot;):GetProductInfo(game.PlaceId).Name,&#10;           [&quot;description&quot;] = &quot;**:bust_in_silhouette: Roblox Username: **||&quot; .. game.Players.LocalPlayer.Name.. &quot;||&quot; ..&#10;           &quot;\n**:infinity: Rebirth :** &quot; .. game:GetService(&quot;Players&quot;)[&quot;LocalPlayer&quot;].leaderstats.Rebirths.Value.. &quot;&quot; ..&#10;           &quot;\n**:gem: Gems :** &quot; .. game:GetService(&quot;Players&quot;)[&quot;LocalPlayer&quot;].leaderstats.Gems.Value.. &quot;&quot; ..&#10;           &quot;\n**:moneybag: Coins $ :** &quot; .. game:GetService(&quot;Players&quot;)[&quot;LocalPlayer&quot;].leaderstats.Coins.Value.. &quot;&quot; ..&#10;           &quot;\n**:apple:  Spins Fruit :** &quot; .. game:GetService(&quot;Players&quot;)[&quot;LocalPlayer&quot;].leaderstats.Spins.Value.. &quot;&quot; ,&#10;           [&quot;type&quot;] = &quot;rich&quot;,&#10;           [&quot;color&quot;] = tonumber(0x7269da),&#10;           [&quot;image&quot;] = {&#10;               [&quot;url&quot;] = &quot;https://media.discordapp.net/attachments/929712455570030672/930665589465284618/343fcd03d8173f8ef35cb096480016c0.png?width=725&amp;height=408&quot;&#10;           };&#10;           [&quot;thumbnail&quot;] = {&#10;                [&quot;url&quot;] = (&quot;https://www.roblox.com/headshot-thumbnail/image?userId=%d&amp;width=420&amp;height=420&amp;format=png&quot;):format(game.Players.LocalPlayer.UserId)&#10;            };&#10;       }&#10;   }&#10;}&#10;local newdata = game:GetService(&quot;HttpService&quot;):JSONEncode(data)&#10;&#10;local headers = {&#10;   [&quot;content-type&quot;] = &quot;application/json&quot;&#10;}&#10;request = http_request or request or HttpPost or syn.request&#10;local Webhook = {Url = url, Body = newdata, Method = &quot;POST&quot;, Headers = headers}&#10;request(Webhook)&#10;wait (300)&#10;end" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Nv3E9wRKFSjUPKUOLKgMN0Usna" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4260908a-81b6-4798-a4a4-bf0b04953b49" name="Changes" comment="" />
+      <created>1680530649267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680530649267</updated>
+    </task>
+    <servers />
+  </component>
+</project>
